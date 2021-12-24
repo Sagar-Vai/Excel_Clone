@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+}
+*{
+    box-sizing: border-box; 
+}
+.menu-container{
+    border: 1px solid red;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    
+}
+.menu-container>*{
+    border: 1px solid;
+    height: 70%;
+}
+.nos-container{
+width: 25%;
+}
+.font-size{
+    width: 6%;
+}
+.font-family{
+width: 11%;
+}
+.formatting-container{
+    width: 18%;
+}
+.alignment-container{
+    width: 18%;   
+}
+.color-container{
+    width: 10%;
+}
+.menu-icon{
+    font-size: 130%;
+    color: gray;
+}
+.menu-active{
+    color: black;
+}
+.nos-container,.formatting-container,.alignment-container,.color-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+.formula-container{
+    /* border: 1px solid red; */
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    background-color: rgb(178, 245, 178);
+}
+.formula-container>*{
+    height:74%;
+}
+.address{
+    width: 12%;
+}
+.formula{
+width:74%;
+}
+.grid_container{
+    height: calc( 100vh - (5rem + 2rem + 2.5rem ) );
+    background-color: lightgreen; 
+    overflow: auto;
+    position: relative;
+}
+.sheets_container{
+height: 2.5rem;
+display: flex;
+}
+.icon_container{
+    width: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+       }
+.sheet_list{
+    border: 1px solid;
+    width: 96%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    
+}
+.sheet_list::-webkit-scrollbar {
+    display: none;
+  }  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sheet_list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.sheet{
+    border: 1px solid;
+    height: 100%;
+    min-width: 5rem;
+    /* text-align: center; */
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: lightgrey;
+}
+.active{
+    background-color: white;
+}
+.icon{
+    font-size: 1.2rem;
+}
+.block{
+    border: 1px solid;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: 0.2rem;
+    /* background-color: gray; */
+}
+.top-left_block{
+   background-color: gray;
+}
+  .top-row{
+    display: flex;
+    border: 1px solid;
+    position: absolute;
+    left: 30px;
+    top: -1px;
+    /* height: 30px;
+    
+    width: 80px;
+    border: 1px solid;
+    background: lightgreen;
+    
+    left: 24px;
+    top: 112;
+    overflow: auto;
+    width:75%; */
+}  
+
+.left-col{
+    /* box-sizing: border-box;
+    width: 25px;
+    border: 1px solid red;
+    background-color: lightgreen;
+    overflow: auto; */
+
+    
+} 
+.grid{
+    /* display: flex; */
+    overflow: auto;
+    position: absolute;
+    /* left: 25px;
+    top: 130px; */
+    align-content: justify;
+    left: 31px;
+    top: 32px;
+}
+.row{
+    display: flex;
+    
+}
+/* .col{
+    min-width: 80px;
+    max-width:80px;
+    border: 1px solid;
+    min-height: 30px;
+    text-align: center;
+    
+} */
+.cell{
+    border: 1px solid;
+    min-width: 5rem;
+    height: 2rem;
+    text-align: center;
+    /* text-align: center;
+    padding-top: 0.2rem; */
+}
